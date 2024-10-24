@@ -26,11 +26,7 @@ def get_filters():
     city = get_city()
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    while True:
-        month = input(
-            'What month would you like to see data for? [All, January, February, ..., June]\n').strip().lower()
-        if month in MONTHS or month == 'all':
-            break
+    month = get_month()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
@@ -50,6 +46,13 @@ def get_city():
             break
     return city
 
+def get_month():
+    while True:
+        month = input(
+            'What month would you like to see data for? [All, January, February, ..., June]\n').strip().lower()
+        if month in MONTHS or month == 'all':
+            break
+    return month
 
 def load_data(city, month, day):
     """
