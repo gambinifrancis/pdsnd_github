@@ -3,14 +3,15 @@
 ### Date created
 October 24th, 2024
 
-### Project Title
-Replace the Project Title
+## Bike Share App
 
 ### Description
-Describe what your project is about and what it does
+This app returns bike sharing statistics for Chicago, New York, or Washington.
+Information can be filtered by month and by day of the week.
+It also returns raw data for the selected filters.
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
